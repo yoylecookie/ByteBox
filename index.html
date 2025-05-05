@@ -46,7 +46,8 @@ ByteBox 1.0 beta
             <main class="instructions-column">
                 <section>
 			
-<button onclick="songname">Change Song name</button>
+<button onclick="let song = prompt("Please enter song name", "Untitled");
+                getElementById("title").innerHTML = song + " - ByteBox";">Change Song name</button>
                     <h2>
                         📄 Instructions
                     </h2>
@@ -156,10 +157,6 @@ ByteBox 1.0 beta
                 */
             class e {}
 
-            function songname {
-                let song = prompt("Please enter song name", "Untitled");
-                getElementById("title").innerHTML = song + " - ByteBox"
-            }
           
             function i(t) {
                 let e = 0;
