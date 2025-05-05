@@ -5,7 +5,7 @@ ByteBox 1.0 beta
 	<link rel="icon" type="favicon/png" href="favicon.png">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ByteBox</title>
+    <title id="title">ByteBox</title>
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
@@ -17,6 +17,7 @@ ByteBox 1.0 beta
     </head>
 
 <body>
+<button onclick="songname">Change Song name</button>
     <div id="beepboxEditorContainer">
         <noscript>
             Sorry, BeepBox requires a JavaScript-enabled browser, you will have to go to a browser such as chrome, edge, or even opera.
@@ -153,6 +154,11 @@ ByteBox 1.0 beta
                 */
             class e {}
 
+            function songname {
+                let song = prompt("Please enter song name", "Untitled");
+                getElementById("title").innerHTML = song + " - ByteBox"
+            }
+          
             function i(t) {
                 let e = 0;
                 for (let i = 0; i < t.length; i++) e += t[i];
