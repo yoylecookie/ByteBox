@@ -75,10 +75,10 @@ html {
         }
 
 button {
-        margin-left:40%;
+        margin-left:37%;
 	background-color:royalblue;
 	padding:25px;
-	border:none;
+	border:#FFFFFF solid 5px;
 	border-radius:15px;
 	color:white;
 	transition-duration:0.4s;
@@ -91,7 +91,6 @@ button:hover {
 	border-radius:15px;
 	color:ROYALBLUE;
 }
-
 
         /* wide screen */
         @media (min-width: 711px) {
